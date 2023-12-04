@@ -1,3 +1,28 @@
 # You can specialize this file for each language.
 # For example, for French create a messages.fr file
 #
+
+name=Name
+amount=Amount
+bank_name= Bank Name
+bank_Id=Bank ID
+isAdmin=is Admin?
+email=Email
+address=Address
+bankID=Bank ID
+type=Type
+expDate=exp. Date
+quantity=Quantity
+taxStatus=Tax Status
+item_name=Item Name
+description=Description
+author=Author
+amount=Amount
+date = Date
+status=Status
+Administrators=Administrator
+Payments=Payment
+Customers=Customer
+Details=Detail
+Items=Item
+Purchases=Purchase

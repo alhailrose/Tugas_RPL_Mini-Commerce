@@ -8,7 +8,7 @@ import java.util.*;
 import play.data.validation.*;
  
 @Entity
-public class Customer extends Model {
+public class Administrator extends Model {
  	
 	@Required
 	public String name;
@@ -19,9 +19,5 @@ public class Customer extends Model {
 	
 	@Required
 	public String address;
-
-	public String toString() {
-    return name;
-}
- 	
+ 	public boolean isAdmin;
 }
