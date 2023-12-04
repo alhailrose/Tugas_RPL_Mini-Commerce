@@ -11,13 +11,18 @@ import play.data.validation.*;
 public class Administrator extends Model {
  	
 	@Required
-	public String name;
-
 	@Email
-	@Required
 	public String email;
-	
+
 	@Required
-	public String address;
- 	public boolean isAdmin;
+	public String password;
+
+	public Administrator(String email, String password){
+		this.email =email;
+		this.password=password;
+	}
+
+	public static Administrator connect(String email, String password) {
+    return find("byEmailAndPassword", email, password).first();
+}
 }
