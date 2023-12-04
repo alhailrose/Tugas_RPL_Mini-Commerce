@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.*;
  
 @Entity
-public class Order extends Model {
+public class Purchase extends Model {
  	
 	public Date date;
 	public String status;
