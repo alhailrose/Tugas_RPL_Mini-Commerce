@@ -8,8 +8,10 @@ import java.util.*;
 import play.data.validation.*;
  
 @Entity
-public class Administrator extends Model {
- 	
+public class User extends Model {
+ 	@Required
+	public String fullName;
+
 	@Required
 	@Email
 	public String email;
@@ -17,12 +19,19 @@ public class Administrator extends Model {
 	@Required
 	public String password;
 
-	public Administrator(String email, String password){
+	public Boolean isAdmin;
+
+	public String toString() {
+    return fullName;
+	}
+
+	public User(String fullName, String email, String password){
+		this.fullName=fullName;
 		this.email =email;
 		this.password=password;
 	}
 
-	public static Administrator connect(String email, String password) {
+	public static User connect(String email, String password) {
     return find("byEmailAndPassword", email, password).first();
 }
 }
