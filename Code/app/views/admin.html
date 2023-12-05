@@ -33,18 +33,21 @@
                 <li class="${request.controller == 'Users' ? 'selected' : ''}">
                     <a href="@{Users.list()}">User</a>
                 </li>
-                <li class="${request.controller == 'Details' ? 'selected' : ''}">
-                    <a href="@{Details.list()}">Detail</a>
+                <li class="${request.controller == 'Items' ? 'selected' : ''}">
+                    <a href="@{Items.list()}">Item</a>
                 </li>
-                <li class="${request.controller == 'Purchases' ? 'selected' : ''}">
-                    <a href="@{Purchases.list()}">Purchases</a>
+                <li class="${request.controller == 'Prices' ? 'selected' : ''}">
+                    <a href="@{Prices.list()}">Prices</a>
+                </li>
+                <li class="${request.controller == 'Shippings' ? 'selected' : ''}">
+                    <a href="@{Shippings.list()}">Shipping</a>
                 </li>
                 <li class="${request.controller == 'Payments' ? 'selected' : ''}">
                     <a href="@{Payments.list()}">Payment</a>
                 </li>
             #{/secure.check}
-            <li class="${request.controller == 'Items' ? 'selected' : ''}">
-              <a href="@{Items.list()}">Item</a>
+            <li class="${request.controller == 'Checkouts' ? 'selected' : ''}">
+              <a href="@{Checkouts.list()}">Checkouts</a>
             </li>
         </ul>
         
@@ -52,9 +55,7 @@
         </div>
         
         <p id="footer">
-            Yabe is a (not so) powerful blog engine built with the 
-            <a href="https://www.playframework.com">Play framework</a>
-            as a tutorial application.
+            Mini E-Commerce is a minimum system build with PLAY Framework
         </p>
         
     </body>

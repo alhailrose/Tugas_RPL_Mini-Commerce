@@ -26,3 +26,7 @@ Customers=Customer
 Details=Detail
 Items=Item
 Purchases=Purchase
+
+secure.username=Email:
+secure.password=Password:
+secure.signin=Log in now

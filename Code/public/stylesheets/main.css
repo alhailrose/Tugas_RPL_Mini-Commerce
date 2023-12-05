@@ -1,20 +1,21 @@
 /** Main layout **/
 
 html, body {
-  background: #364B66 !important;
-  font-family: Helvetica, Arial, Sans !important;
+  background: #283447;
+  font-family: 'Helvetica', Arial, Sans-serif;
+  color: #fff;
 }
 
 body {
-  width: 900px;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 0 30px;
-  margin: auto;
 }
 
 /** Blog header **/
 
 #header {
-  padding: 10px 0;
+  padding: 20px 0;
   position: relative;
 }
 
@@ -39,66 +40,34 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
-  right: 0;
-  top: 30px;
   right: 20px;
+  top: 30px;
 }
 
 #tools a {
   color: #fff;
   text-decoration: none;
+  margin-left: 15px;
+  font-size: 18px;
 }
 
 #title {
   background: #B8C569;
-  padding: 20px 30px 30px 20px;
+  padding: 20px 30px;
   margin: 20px 0;
   color: #3C4313;
   position: relative;
-  -webkit-border-radius: 16px;
-  -webkit-box-shadow: 0 2px 0 #93A045;
-  -moz-border-radius: 16px;
-}
-
-/** A little hack to create arrows without images **/
-.about {
-  text-indent: -999em;
-  display: block;
-  width: 0; 
-  height: 0; 
-border-left: 10px solid transparent; 
-border-right: 10px solid transparent;
-border-bottom: 10px solid #BAC36E;
-border-top: 0;
-position: absolute;
-top: -10px;
-left: 60px;
-}
-
-#title h1 {
-  font-size: 64px;
-  margin: 0;
-}
-
-#title h1 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#title h2 {
-  font-size: 26px;
-  margin: 0;
-  font-weight: normal;
+  border-radius: 16px;
+  box-shadow: 0 2px 0 #93A045;
 }
 
 /** Main content **/
 
 #main {
   background: #314660;
-  background: -webkit-gradient(linear, left top, left 30%, from(#314660), to(#364B66));
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
   padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
 }
 
 /** Post **/
@@ -111,22 +80,30 @@ left: 60px;
   font-size: 36px;
   color: #F5C2CC;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.post .post-title a:hover {
+  color: #ED617D;
 }
 
 .post .post-metadata {
   color: #BAC36E;
-  display: block;
   font-size: 70%;
   display: inline-block;
+  margin-top: 5px;
 }
 
 .post .post-author {
   font-size: 130%;
   font-weight: bold;
+  color: #fff;
 }
 
 .post .post-metadata a {
   color: #9FA85D;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 .post .post-content {
@@ -134,25 +111,22 @@ left: 60px;
   background: #fff;
   padding: 10px;
   margin: 10px 0 50px 0;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-box-shadow: 0 2px 0 #BBBBBB;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 #BBBBBB;
 }
 
 .post .about {
-  text-indent: -999em;
   display: block;
-  width: 0; 
-  height: 0; 
-border-left: 10px solid transparent; 
-border-right: 10px solid transparent;
-border-bottom: 10px solid #fff;
-border-top: 0;
-position: absolute;
-top: -6px;
-left: 24px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #BAC36E;
+  border-top: 0;
+  position: absolute;
+  top: -10px;
+  left: 60px;
 }
-
 
 /** Older posts **/
 
@@ -177,6 +151,12 @@ left: 24px;
   padding: 0;
   color: #131921;
   font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.older-posts .post-title a:hover {
+  color: #283447;
 }
 
 .older-posts .post-metadata {
@@ -187,6 +167,9 @@ left: 24px;
 
 .older-posts .post-metadata a {
   color: #869AB1;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease-in-out;
 }
 
 /** Comments **/
@@ -213,7 +196,6 @@ h3 span {
 
 .comment .comment-metadata {
   color: #869AB1;
-  display: block;
   font-size: 50%;
   display: block;
   float: left;
@@ -225,6 +207,7 @@ h3 span {
   font-size: 150%;
   font-weight: bold;
   display: block;
+  color: #fff;
 }
 
 .comment .comment-content {
@@ -236,22 +219,20 @@ h3 span {
   margin-bottom: 10px;
   margin-left: 100px;
   padding: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .comment .about {
-  text-indent: -999em;
   display: block;
-  width: 0; 
-  height: 0; 
-border-top: 10px solid transparent; 
-border-bottom: 10px solid transparent;
-border-right: 10px solid #E4EAFF;
-border-left: 0;
-position: absolute;
-top: 4px;
-left: -4px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #E4EAFF;
+  border-left: 0;
+  position: absolute;
+  top: 4px;
+  left: -4px;
 }
 
 /** Form **/
@@ -259,9 +240,7 @@ left: -4px;
 form {
   padding: 10px;
   background: #253142;
-  background: -webkit-gradient(linear, left top, left 60%, from(#253142), to(#364B66));
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 form .error {
@@ -269,9 +248,8 @@ form .error {
   color: #fff;
   font-size: 90%;
   padding: 3px 5px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-box-shadow: 0 2px 0 #800;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 #800;
 }
 
 form p {
@@ -281,10 +259,13 @@ form p {
 form textarea {
   width: 70%;
   height: 150px;
+  border-radius: 5px;
 }
 
 form input, form textarea {
   font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 form label {
@@ -295,18 +276,17 @@ form label {
   margin-bottom: 3px;
 }
 
-#captcha{
+#captcha {
   display: block;
-  height: 50px;  
+  height: 50px;
 }
 
 .success {
   background: #67AD10;
   color: #fff;
   padding: 10px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-box-shadow: 0 2px 0 #4E840B; 
+  border-radius: 6px;
+  box-shadow: 0 2px 0 #4E840B;
 }
 
 /** Pagination **/
@@ -317,13 +297,15 @@ form label {
   position: relative;
   color: #869AB1;
   font-size: 90%;
-  top: -20px;
+  margin-top: -20px;
   margin-bottom: 30px;
 }
 
 #pagination a {
   color: #869AB1;
   font-size: 90%;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 #pagination #previous {
@@ -360,6 +342,7 @@ form label {
 #footer a {
   color: #869AB1;
   font-weight: bold;
+  text-decoration: none;
 }
 
 /** Admin **/
@@ -385,11 +368,11 @@ form label {
   font-size: 80%;
   background: #591C64;
   padding: 2px 10px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
+  border-radius: 9px;
+  transition: background 0.3s ease-in-out;
 }
 
-#adminMenu li.selected a {
+#adminMenu li a:hover {
   background: #82A346;
 }
 
@@ -457,14 +440,13 @@ tr.odd {
 
 .crudFlash {
   border: 0;
-  -webkit-border-radius: 8px;
+  border-radius: 8px;
   font-size: 80%;
   padding: 2px 10px;
 }
 
 .crudField .tag.selected {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
+  border-radius: 8px;
 }
 
 .crudField .error {
@@ -472,7 +454,7 @@ tr.odd {
   border: none;
   padding: 0;
   color: pink;
-  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 /** Login **/
@@ -480,15 +462,13 @@ tr.odd {
 #login form {
   background: #8B98AD !important;
   border: 0 !important;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
+  border-radius: 16px;
 }
 
 #login label, #password-field label, #username-field label {
   color: #161D28 !important;
   font-size: 110% !important;
 }
-
 
 #remember-field {
   display: none;
@@ -501,6 +481,7 @@ tr.odd {
   padding: 4px;
   margin: 0;
   font-size: 90%;
+  border-radius: 6px;
 }
 
 #admin .post.odd {
@@ -509,6 +490,12 @@ tr.odd {
 
 #admin .post a {
   color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#admin .post a:hover {
+  color: #283447;
 }
 
 #newPost {
@@ -518,20 +505,19 @@ tr.odd {
 
 #newPost a {
   background: #C88116;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
+  border-radius: 12px;
   padding: 5px 10px;
   font-size: 80%;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+  box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+  transition: background 0.3s ease-in-out;
 }
 
 #newPost a span {
   background: #7D510E;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
+  border-radius: 8px;
   padding: 0 5px 2px 5px;
   position: relative;
   top: -1px;
@@ -540,8 +526,14 @@ tr.odd {
 #postContent {
   width: 100%;
   height: 300px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .hasError {
   background: pink;
+  color: #fff;
 }

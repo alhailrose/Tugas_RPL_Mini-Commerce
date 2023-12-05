@@ -3,6 +3,6 @@ import play.*;
 import play.mvc.*;
  
 @With(Secure.class)
-public class Details extends CRUD{
+public class Checkouts extends CRUD {
   
 }

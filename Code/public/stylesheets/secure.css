@@ -1,0 +1,102 @@
+html,
+        body {
+            background: #2d2d2d;
+            font-family: 'Lucida Grande', verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        #login {
+            width: 400px;
+            margin: 50px auto;
+            text-align: center;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #login h1 {
+            font-weight: bold;
+            color: #61dafb;
+        }
+
+        #login form {
+            border: none;
+            background: #444;
+            padding: 20px;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        #login form p {
+            margin: 10px 0;
+        }
+
+        #username-field,
+        #password-field,
+        #remember-field,
+        #signin-field {
+            margin-bottom: 15px;
+        }
+
+        #username-field label,
+        #password-field label {
+            display: block;
+            width: 150px;
+            float: left;
+            text-align: right;
+            margin-right: 10px;
+            color: #61dafb;
+            font-size: 14px;
+        }
+
+        #username-field input,
+        #password-field input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #61dafb;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #remember-field input {
+            margin-left: 160px;
+        }
+
+        #remember-field {
+            font-size: 14px;
+            color: #61dafb;
+        }
+
+        #signin-field input {
+            margin-left: 0;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #61dafb;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #login .error,
+        #login .success {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #login .error {
+            background: #c00;
+        }
+
+        #login .success {
+            background: #008800;
+        }

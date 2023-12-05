@@ -1,4 +1,5 @@
 package models;
+ 
 import play.*;
 import play.db.jpa.*;
  
@@ -6,8 +7,12 @@ import javax.persistence.*;
 import java.util.*;
  
 @Entity
+public class Price extends Model {
 
-public class Detail extends Model {
-  public Integer quantity;
-  public String taxStatus;
+	public String price;
+
+	public String toString() {
+    return  "$"+price;
+}
+ 	
 }
