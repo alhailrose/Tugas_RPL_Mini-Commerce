@@ -1,9 +1,62 @@
 <!DOCTYPE html>
-
 <html>
-    <ul id="tools">
-        <li>
-            <a href="@{Admin.index()}">Log in to write something</a>
-        </li>
-    </ul>
+    <head>
+        <title>Administration</title>		
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        #{get 'moreStyles' /}	
+        <link rel="stylesheet" type="text/css" media="screen" 
+                href="@{'/public/stylesheets/main.css'}" />
+        <link rel="shortcut icon" type="image/png" 
+                href="@{'/public/images/favicon.png'}" />
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}"></script>
+        <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+    </head>
+    <body id="admin">
+        
+        <div id="header">
+            <div id="logo">
+                Mini. <span>E-Commerce</span>
+            </div>
+            <ul id="tools">
+                <li>
+                    <a href="@{Secure.logout()}">Log out</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="main">
+          <ul id="adminMenu">
+            <li class="${request.controller == 'Admin' ? 'selected' : ''}">
+                <a href="@{Admin.index()}">Welcome Aboard</a>
+            </li>
+            #{secure.check 'admin'}
+                <li class="${request.controller == 'Users' ? 'selected' : ''}">
+                    <a href="@{Users.list()}">User</a>
+                </li>
+                <li class="${request.controller == 'Items' ? 'selected' : ''}">
+                    <a href="@{Items.list()}">Item</a>
+                </li>
+                <li class="${request.controller == 'Prices' ? 'selected' : ''}">
+                    <a href="@{Prices.list()}">Prices</a>
+                </li>
+                <li class="${request.controller == 'Shippings' ? 'selected' : ''}">
+                    <a href="@{Shippings.list()}">Shipping</a>
+                </li>
+                <li class="${request.controller == 'Payments' ? 'selected' : ''}">
+                    <a href="@{Payments.list()}">Payment</a>
+                </li>
+            #{/secure.check}
+            <li class="${request.controller == 'Checkouts' ? 'selected' : ''}">
+              <a href="@{Checkouts.list()}">Checkouts</a>
+            </li>
+        </ul>
+        
+            #{doLayout /} 
+        </div>
+        
+        <p id="footer">
+            Mini E-Commerce is a minimum system build with PLAY Framework
+        </p>
+        
+    </body>
 </html>
