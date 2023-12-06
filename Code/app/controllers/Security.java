@@ -9,10 +9,10 @@ public class Security extends Secure.Security {
     }
 
     static void onDisconnected() {
-      Admin.index();
+      Page.index();
     }
     static void onAuthenticated() {
-      Admin.index();
+      Page.index();
    }
 
    static boolean check(String profile) {

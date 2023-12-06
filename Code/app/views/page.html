@@ -26,8 +26,8 @@
         
         <div id="main">
           <ul id="adminMenu">
-            <li class="${request.controller == 'Admin' ? 'selected' : ''}">
-                <a href="@{Admin.index()}">Welcome Aboard</a>
+            <li class="${request.controller == 'Page' ? 'selected' : ''}">
+                <a href="@{Page.index()}">Welcome Aboard</a>
             </li>
             #{secure.check 'admin'}
                 <li class="${request.controller == 'Users' ? 'selected' : ''}">
@@ -44,7 +44,7 @@
                 </li>
             #{/secure.check}
             <li class="${request.controller == 'Checkouts' ? 'selected' : ''}">
-              <a href="@{Checkouts.list()}">Checkouts</a>
+              <a href="@{Checkouts.list()}">Checkout</a>
             </li>
         </ul>
         
