@@ -2,31 +2,36 @@
 # For example, for French create a messages.fr file
 #
 
-name=Name
-amount=Amount
-bank_name= Bank Name
-bank_Id=Bank ID
-isAdmin=is Admin?
-email=Email
-address=Address
-bankID=Bank ID
-type=Type
-expDate=exp. Date
-quantity=Quantity
-taxStatus=Tax Status
-item_name=Item Name
-description=Description
-author=Author
-amount=Amount
-date = Date
-status=Status
-Administrators=Administrator
-Payments=Payment
-Customers=Customer
-Details=Detail
-Items=Item
-Purchases=Purchase
+#chekouts
+custName= Customer Name
+merkName= Laptop Type
+shipItem= Shipping
+payMethod= Payment Method
+description= Description
+Checkouts = Checkout
 
+#users
+fullName= Full Name
+email= Email
+password=Password
+isAdmin = is Admin?
+Users=User
+
+#item
+merkLaptop = Laptop Type
+storage = Storage
+itemPrice = Laptop Price
+Items = Item
+
+#Shippings
+Shippings = Shipping
+shipMethod= Shipping Method
+
+#Payments
+Payments = Payment
+paymentMethod=Payment Method
+
+#User
 secure.username=Email:
 secure.password=Password:
 secure.signin=Log in now

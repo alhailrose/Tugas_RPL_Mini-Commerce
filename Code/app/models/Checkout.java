@@ -19,10 +19,6 @@ public class Checkout extends Model {
 
   @Required
   @ManyToOne
-  public Price priceItem;
-
-  @Required
-  @ManyToOne
   public Shipping shipItem;
 
   @Required

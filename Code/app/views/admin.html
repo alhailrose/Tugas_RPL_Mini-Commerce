@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Administration</title>		
+        <title>Mini E-Commerce</title>		
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         #{get 'moreStyles' /}	
         <link rel="stylesheet" type="text/css" media="screen" 
@@ -35,9 +35,6 @@
                 </li>
                 <li class="${request.controller == 'Items' ? 'selected' : ''}">
                     <a href="@{Items.list()}">Item</a>
-                </li>
-                <li class="${request.controller == 'Prices' ? 'selected' : ''}">
-                    <a href="@{Prices.list()}">Prices</a>
                 </li>
                 <li class="${request.controller == 'Shippings' ? 'selected' : ''}">
                     <a href="@{Shippings.list()}">Shipping</a>

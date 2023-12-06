@@ -16,8 +16,11 @@ public class Item extends Model {
 	@Required
 	public String storage;
 
+	@Required
+	public String itemPrice;
+
 	public String toString() {
-    return  merkLaptop + "|" +storage;
+    return  merkLaptop + "|" +storage + "|Rp." + itemPrice;
 }
  	
 }
