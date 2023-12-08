@@ -15,8 +15,8 @@ Project ini merupakan sebuah sistem toko online sederhana menggunakan suatu fram
 
 # Diagram Project
 1. Textual Analysis
-![Gambar Homepage](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Homepage.png "Home Page")
-   
+![Gambar Login Page](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Diagram/Textual%20Analysis.jpg "Login Page")
+
 2. Use Case Diagram
 ![Gambar Login Page](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Diagram/Use%20Case%20Diagram.jpg "Login Page")
    
