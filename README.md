@@ -18,23 +18,23 @@ Project ini merupakan sebuah sistem toko online sederhana menggunakan suatu fram
    
 ![Gambar Login Page](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Diagram/Textual%20Analysis.png "Login Page")
 
-3. Use Case Diagram
+2. Use Case Diagram
    
 ![Gambar Login Page](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Diagram/Use%20Case%20Diagram.jpg "Login Page")
    
-4. Sequence Diagram Admin
+3. Sequence Diagram Admin
    
 ![Gambar Menu Admin](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Diagram/Sequence%20Diagram%20Admin.jpg "Menu Admin")
    
-6. Sequence Diagram User
+4. Sequence Diagram User
    
 ![Gambar Menu Customer](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Diagram/Sequence%20Diagram%20User.jpg "Menu Customer")
 
-4. Class Diagram
+5. Class Diagram
    
 ![Gambar Menu Customer](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Diagram/Class%20Diagram.jpg "Menu Customer")
 
-4. ERD Diagram
+6. ERD Diagram
    
 ![Gambar Menu Customer](https://github.com/alhailrose/Tugas_RPL_Mini-Commerce/blob/main/Diagram/Entity%20Relationship%20Diagram.jpg "Menu Customer")
 
